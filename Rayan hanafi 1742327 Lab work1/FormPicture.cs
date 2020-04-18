@@ -37,7 +37,7 @@ namespace Rayan_hanafi_1742327_Lab_work1
         }
         private void FrmPicture_Load(object sender, EventArgs e)
         {
-            _assembly = Assembly.GetExecutingAssembly(); //set the assembly object
+            _assembly = Assembly.GetExecutingAssembly(); 
             _imageStream = _assembly.GetManifestResourceStream("Rayan_hanafi_1742327_Lab_work1.Resources.A+.jpg");
         }
 
