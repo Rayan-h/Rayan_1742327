@@ -14,11 +14,12 @@ namespace Rayan_hanafi_1742327_Lab_work1
 {
     public partial class FrmPicture : Form
     {
-       Assembly _assembly; // creating an assembly object
-        Stream _imageStream;// creating an imagestream object
+       Assembly _assembly; 
+        Stream _imageStream;
         public FrmPicture()
         {
             InitializeComponent();
+            PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void BtnLoadImage_Click(object sender, EventArgs e)
@@ -37,7 +38,7 @@ namespace Rayan_hanafi_1742327_Lab_work1
         private void FrmPicture_Load(object sender, EventArgs e)
         {
             _assembly = Assembly.GetExecutingAssembly(); //set the assembly object
-            _imageStream = _assembly.GetManifestResourceStream("Rayan hanafi 1742327 Lab work1.res.Coronavirus-badge-300.png");
+            _imageStream = _assembly.GetManifestResourceStream("Rayan_hanafi_1742327_Lab_work1.Resources.A+.jpg");
         }
 
         private void BtnImageFromRe_Click(object sender, EventArgs e)

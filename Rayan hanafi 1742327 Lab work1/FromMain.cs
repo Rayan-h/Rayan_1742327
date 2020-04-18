@@ -89,5 +89,10 @@ namespace Rayan_hanafi_1742327_Lab_work1
             FrmPicture frm = new FrmPicture();
             frm.ShowDialog();
         }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

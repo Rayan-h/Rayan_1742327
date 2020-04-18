@@ -73,6 +73,7 @@
             this.BtnExit.TabIndex = 1;
             this.BtnExit.Text = "Exit";
             this.BtnExit.UseVisualStyleBackColor = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // LblUsername
             // 
